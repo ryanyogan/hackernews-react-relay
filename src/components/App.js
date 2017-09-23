@@ -2,9 +2,11 @@ import '../styles/App.css';
 
 import React from 'react';
 
+import LinkListPage from './LinkListPage';
+
 class App extends React.Component {
   render() {
-    return <div>hello</div>;
+    return <LinkListPage />;
   }
 }
 
