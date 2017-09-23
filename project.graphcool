@@ -1,5 +1,5 @@
 # project: cj7xj485g119t0168dq2zsi4r
-# version: 2
+# version: 3
 
 type User implements Node {
   id: ID! @isUnique
@@ -8,6 +8,8 @@ type User implements Node {
   name: String!
   links: [Link!]! @relation(name: "UsersLinks")
   votes: [Vote!]! @relation(name: "UsersVotes")
+  email: String @isUnique
+  password: String
 }
 
 type Link implements Node {
